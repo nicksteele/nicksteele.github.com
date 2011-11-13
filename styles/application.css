@@ -46,7 +46,7 @@ p {
 
 }
 .stuff p {
-
+	margin: 1em 18em;
 }
 .navic {
 	padding: 2.8em 0 0 0;
@@ -62,11 +62,43 @@ p {
 	float: left;
 }
 .navi li a {
+	color: #524DFF;
 	margin: 0;
 	text-decoration: none;
+	text-shadow: 0 0 1px #524DFF;
 }
 .navi a:hover {
+	text-shadow: 0 0 1px #FFF;
+}
 
+.contactc {
+	display: block;
+	margin: 0;
+	padding: 0 2.2em;
+	border-right: 1px solid grey;
+	float: left;
+}
+.contactc h3 {
+	color: #524DFF;
+	font-weight: normal;
+	margin: 0.8em 0;
+}
+.contact {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.contact li {
+	margin: 0.8em 0;
+}
+.contact li a {
+	color: #524DFF;
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 0 0 1px #524DFF;
+}
+.contact a:hover {
+	text-shadow: 0 0 1px #FFF;
 }
 
 
