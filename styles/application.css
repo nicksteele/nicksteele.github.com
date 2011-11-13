@@ -30,7 +30,7 @@ h1 {
 h1 a {
 	text-decoration: none;
 	color: #696969;
-	text-shadow: #6374AB 20px -12px 2px;
+	text-shadow: 10px 2px 2px #6374AB;
 }
 h1 a:hover {
 	text-shadow: 1px 1px 1px #000;
