@@ -1,5 +1,5 @@
 body {
-	font-family: "Helvetica Neue";
+	font-family: "Bitter";
 	font-size: 100%;
 	margin: 0;
 }
@@ -7,33 +7,44 @@ a,
 p,
 h1,
 div {
-  transition: all ease-in-out 0.15s;
-  -moz-transition: all ease-in-out 0.15s;
+  transition: all cubic-bezier 0.15s;
+  -moz-transition: all cubic-bezier 0.15s;
   -webkit-transition: all ease-in-out 0.15s;
   text-decoration:none;
   outline: none;
 }
 #container {
-	margin: 0;
 	width: 100%;
 }
 #header {
 	width: 100%;
 }
+#footer {
+	margin: 0;
+	background:#C04000;
+	-moz-box-shadow:0 -3px 15px #666;
+	-webkit-box-shadow:0 -3px 15px #666;
+	box-shadow:0 -3px 15px #666;
+	} 
 #content {
+	
 }
 h1 {
 	margin: 0.1em 0.3em 0;
-	font-size: 6em;
+	font-size: 3.5em;
 	float: left;
+	text-align:middle;
 }
-h1 a {
+h1 a{
 	text-decoration: none;
-	color: #696969;
-	text-shadow: 10px 2px 2px #6374AB;
+	font-family: 'Sue Ellen Francisco';
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #000000;
+	text-shadow: 1px 1px 1px #000;
 }
 h1 a:hover {
-	text-shadow: 1px 1px 1px #000;
+	<!-- text-shadow: 1px 1px 1px #000;
 }
 hr {
 	margin: 0;
@@ -46,11 +57,11 @@ p {
 
 }
 .stuff p {
-	margin: 1em 18em;
+	margin: 1em 10% 1em 12em;
 }
 .navic {
 	padding: 2.8em 0 0 0;
-	font-size: 1.5em;
+	font-size: 1.82em;
 }
 .navi {
 	margin: 0;
@@ -73,8 +84,7 @@ p {
 
 .contactc {
 	display: block;
-	margin: 0;
-	padding: 0 2.2em;
+	padding:  2.2em;
 	border-right: 1px solid grey;
 	float: left;
 }
