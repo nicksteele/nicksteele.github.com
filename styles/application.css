@@ -1,126 +1,35 @@
-body {
-	font-family: "Bitter";
-	font-size: 100%;
-	margin: 0;
+<style type="text/css">
+/* <![CDATA[ */
+body{
+	background: black;
 }
-a,
-p,
-h1,
-div {
-  transition: all cubic-bezier 0.15s;
-  -moz-transition: all cubic-bezier 0.15s;
-  -webkit-transition: all ease-in-out 0.15s;
-  text-decoration:none;
-  outline: none;
+body { background: blue; }
+.hidden {
+	 visibility:hidden;
+	 width:0px;
+	 height:0px;
+	 margin:0px;
+	 padding:0px;
+	 border-style:none;
+	 border-width:0px;
+	 max-width:0px;
+	 max-height:0px;
 }
-#container {
-	width: 100%;
+#msg {
+ 	width:20em;
+ 	height:24em;
+ 	margin:.5em 0 .5em 0;
+ 	padding:.5em;
+ 	background-color:#eee;
+ 	border:solid 1px #888;
+ 	white-space:pre;
+ 	font-family:Courier New, monospace;
+ 	font-size:.75em;
+ 	overflow:auto;
 }
-#header {
-	width: 100%;
-}
-#footer {
-	margin: 0;
-	background:#C04000;
-	-moz-box-shadow:0 -3px 15px #666;
-	-webkit-box-shadow:0 -3px 15px #666;
-	box-shadow:0 -3px 15px #666;
-	} 
-#content {
-	
-}
-h1 {
-	margin: 0.1em 0.3em 0;
-	font-size: 3.5em;
-	float: left;
-	text-align:middle;
-}
-h1 a{
-	text-decoration: none;
-	font-family: 'Sue Ellen Francisco';
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #000000;
-	text-shadow: 1px 1px 1px #000;
-}
-h1 a:hover {
-	<!-- text-shadow: 1px 1px 1px #000;
-}
-hr {
-	margin: 0;
-	clear: both;
-}
-p {
-
-}
-.stuff {
-
-}
-.stuff p {
-	margin: 1em 10% 1em 12em;
-}
-.navic {
-	padding: 2.8em 0 0 0;
-	font-size: 1.82em;
-}
-.navi {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-.navi li {
-	margin: 0 3%;
-	float: left;
-}
-.navi li a {
-	color: #524DFF;
-	margin: 0;
-	text-decoration: none;
-	text-shadow: 0 0 1px #524DFF;
-}
-.navi a:hover {
-	text-shadow: 0 0 1px #FFF;
+#Jazz1 {
+	display: none;
 }
 
-.contactc {
-	display: block;
-	padding:  2.2em;
-	border-right: 1px solid grey;
-	float: left;
-}
-.contactc h3 {
-	color: #524DFF;
-	font-weight: normal;
-	margin: 0.8em 0;
-}
-.contact {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-.contact li {
-	margin: 0.8em 0;
-}
-.contact li a {
-	color: #524DFF;
-	margin: 0;
-	text-decoration: none;
-	text-shadow: 0 0 1px #524DFF;
-}
-.contact a:hover {
-	text-shadow: 0 0 1px #FFF;
-}
-
-
-@media screen and (max-width: 1023px) {
-
-}
-
-
-@media screen and (max-width: 767px) {
-	
-}
-
-
-
-
+/* ]]> */
+</style>

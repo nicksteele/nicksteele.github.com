@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" type="text/css" href="../jsTar/styles/style.css" />
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
 
 <head>
+	<script><!--
+		var Jazz = document.getElementById("Jazz1"); if(!Jazz || !Jazz.isJazz) Jazz = document.getElementById("Jazz2");
+--></script>
+	<script src="../jsTar/js/three.js"></script>
+	<script src="../jsTar/js/three.min.js"></script>
+	<script type="../jsTar/js/threexresize.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<title>Cube - Initial gTar Test</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 </head>
-
 <body>
-	<script src="../jsTar/js/three.js"></script>
-	<script src="../jsTar/js/three.min.js"></script>
-	<script type="../jsTar/js/threexresize.js"></script>
+	<object id="Jazz1" classid="CLSID:1ACE1618-1C7D-4561-AEE1-34842AA85E90" class="hidden">
+  	<object id="Jazz2" type="audio/x-jazz" class="hidden">
+  	</object>
+	</object>
+
+	<script> //Check MIDI
+	var list = Jazz.MidiInList();
+	var str = "MIDI input devices found:\n\n";
+	for (var i in list)
+		str += list[i] + "\n";
+		alert(str);
+	</script>
 
 	<script>
 	var camera, scene, renderer;
@@ -50,9 +67,8 @@ function animate() {
     mesh.rotation.x += 0.01;
     mesh.rotation.y += 0.02;
     renderer.render(scene, camera);
-	THREEx.WindowResize(renderer, camera);
 }
-
+THREEx.WindowResize(renderer, camera);
 
 </script>
 </body>
