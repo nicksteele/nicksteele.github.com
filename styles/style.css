@@ -3,7 +3,7 @@
 body{
 	background: black;
 }
-body { background: blue; }
+body { background: black; }
 .hidden {
 	 visibility:hidden;
 	 width:0px;
